@@ -93,7 +93,7 @@ ForegroundVisited=32,102,145
 
 [General]
 ColorScheme=Steam
-Name=Steam Dark
+Name=Valve Steam Dark
 TintFactor=0.15
 TitlebarIsAccentColored=true
 shadeSortColumn=true
