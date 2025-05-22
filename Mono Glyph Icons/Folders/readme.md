@@ -57,6 +57,8 @@ All icons are svg files without defined fill values for individual objects. Ther
 | folders-violet	| fill="rgb(175,85,225)"	| <span style="display:inline-block; width:100%; height:1em; background-color:rgb(175,85,225);"></span> |
 | folders-yellow	| fill="rgb(255,205,0)"		| <span style="display:inline-block; width:100%; height:1em; background-color:rgb(255,205,0);"></span> |
 
+##### *Tons of symlinks for tons of edge cases*
+
 <img src="previews/preview-symlink.png" alt="Preview" width="250px">
 
 ### Folder Icon Sets without Symlinks
