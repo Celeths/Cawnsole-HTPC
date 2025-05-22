@@ -1,0 +1,9 @@
+[Icon Theme]
+Name=Canwsole Mono Glyph Icons Unfilled Folder Set
+Type=IconTheme
+Directories=scalable
+
+[scalable]
+Size=48
+Context=FoldersGeneric
+Type=scalable
