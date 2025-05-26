@@ -1,9 +1,24 @@
 [Icon Theme]
-Name=Canwsole Mono Glyph Icons Unfilled Folder Set
-Type=IconTheme
-Directories=scalable
+Name=Cawnsole Mono-Glyph Folders (Unfilled)
+Comment=Canwsole Mono Glyph Icons Unfilled Folder Set
 
-[scalable]
-Size=48
-Context=FoldersGeneric
-Type=scalable
+Inherits=breeze,hicolor
+
+Example=directory-x-normal
+
+# Directory list
+Directories=places/folders,places/symbolic
+
+[places/symbolic]
+Context=Places
+Size=32
+MinSize=16
+MaxSize=32
+Type=Scalable
+
+[places/folders]
+Context=Places
+Size=64
+MinSize=48
+MaxSize=512
+Type=Scalable
