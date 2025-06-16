@@ -1,22 +1,16 @@
-<svg width="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" height="64" xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <linearGradient id="a" y1="392.36" y2="336.36" gradientUnits="userSpaceOnUse" x2="0" gradientTransform="translate(518 82)">
-   <stop stop-color="#ffffff" stop-opacity="0"/>
-   <stop offset="1" stop-color="#ffffff" stop-opacity=".2"/>
-  </linearGradient>
-  <path color-rendering="auto" color-interpolation-filters="linearRGB" shape-rendering="auto" image-rendering="auto" text-rendering="auto" id="b" color-interpolation="sRGB" color="#000000" d="m542 417.36v58h44v-58h-14z"/>
- </defs>
- <g transform="translate(-532-414.36)">
-  <use fill="#f9d24c" xlink:href="#b"/>
-  <g color-rendering="auto" color-interpolation-filters="linearRGB" shape-rendering="auto" image-rendering="auto" text-rendering="auto" color-interpolation="sRGB" color="#000000">
-   <rect opacity=".25" x="542" y="474.36" width="44" height="1"/>
-   <rect opacity=".5" x="542" y="417.36" width="44" fill="#ffffff" height="1"/>
+<!-- Created with Inkscape (http://www.inkscape.org/) --><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="22" version="1.1" height="22" id="svg2" inkscape:version="0.91 r13725" sodipodi:docname="application-epub+zip.svg">
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1360" inkscape:window-height="708" id="namedview16" showgrid="false" inkscape:zoom="10.727273" inkscape:cx="-2.6101692" inkscape:cy="11" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="layer1"/>
+  <defs id="defs3871"/>
+  <metadata id="metadata3874">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Capa 1" inkscape:groupmode="layer" id="layer1" transform="matrix(1 0 0 1 -326 -534.3622)">
+    <path inkscape:connector-curvature="0" style="fill:#f9d24c;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 336.95365,550.32796 -5.01452,-5.01452 5.01452,-5.01021 1.67293,1.66863 -3.34588,3.34158 1.67295,1.67294 5.0145,-5.01452 -4.36942,-4.36512 c -0.3548,-0.35479 -0.93538,-0.35479 -1.29017,0 l -7.06161,7.06161 c -0.35909,0.3548 -0.35909,0.93537 0,1.29448 l 7.06161,7.06161 c 0.35479,0.35478 0.93537,0.35478 1.29017,0 l 7.0616,-7.06161 c 0.3591,-0.35911 0.3591,-0.93968 0,-1.29448 l -1.02353,-1.02354 z m 0,0" id="path11"/>
   </g>
-  <rect width="1" x="548" y="418.36" fill="#ffffff" height="56" fill-opacity=".321"/>
-  <g color-rendering="auto" color-interpolation-filters="linearRGB" shape-rendering="auto" image-rendering="auto" text-rendering="auto" color-interpolation="sRGB" color="#000000">
-   <rect x="549" y="418.36" fill-opacity=".057" width="1" height="56"/>
-   <path opacity=".75" fill="#ffffff" d="m566 453.28l-6.916-6.917 6.916-6.911 2.307 2.302-4.614 4.609 2.307 2.308 6.916-6.917-6.03-6.02c-.489-.489-1.29-.489-1.779 0l-9.739 9.74c-.495.489-.495 1.29 0 1.786l9.739 9.74c.489.489 1.29.489 1.779 0l9.739-9.74c.495-.495.495-1.296 0-1.786l-1.412-1.412zm0 0"/>
-  </g>
-  <use fill="url(#a)" xlink:href="#b"/>
- </g>
 </svg>

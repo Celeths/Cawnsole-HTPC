@@ -1,26 +1,12 @@
-<svg width="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" height="64">
- <defs>
-  <linearGradient id="a" y1="3" y2="61" x2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0-1 0 64)">
-   <stop stop-color="#bdc3c7"/>
-   <stop offset="1" stop-color="#dadfe1"/>
-  </linearGradient>
-  <linearGradient id="b" y1="61" y2="47" x2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0-1 0 64)">
-   <stop stop-color="#566472"/>
-   <stop offset="1" stop-color="#5e6b78"/>
-  </linearGradient>
-  <linearGradient id="c" y1="17" x1="40" y2="31" x2="54" gradientUnits="userSpaceOnUse">
-   <stop stop-color="#383e51"/>
-   <stop offset="1" stop-color="#655c6f" stop-opacity="0"/>
-  </linearGradient>
- </defs>
- <path fill="url(#a)" d="m10 61v-58h30l14 14v44h-14z"/>
- <g transform="scale(1-1)">
-  <rect width="30" x="10" y="-4" fill="#ffffff" height="1" fill-opacity=".412"/>
-  <rect width="44" x="10" y="-61" fill="#2e3132" height="1" fill-opacity=".294"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="22" version="1.1" xmlns="http://www.w3.org/2000/svg" height="22" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+ <defs id="defs3871"/>
+ <metadata id="metadata3874"/>
+ <g inkscape:label="Capa 1" inkscape:groupmode="layer" id="layer1" transform="matrix(1 0 0 1 -326 -534.3622)">
+  <g inkscape:label="Capa 1" style="fill:#6c7a89" id="layer1-2" transform="matrix(1.3885788 0 0 1.3471415 325.89137 -861.62431)">
+   <path inkscape:connector-curvature="0" id="path4124" d="m 6.7511089,1048.9387 c -0.978627,0 -1.6458726,-0.4892 -1.4679404,-1.7347 0.2224151,-1.557 1.156559,-2.0686 4.1146816,-2.4912 0.02224,0 0.9341429,-0.1556 0.9341429,-0.1556 l -0.3781054,2.758 c -0.8006948,1.0008 -2.2463933,1.6235 -3.2027787,1.6235 z m 3.0470879,-0.1333 0.044479,1.2899 1.2677672,0 1.156559,-8.3406 c 0.355865,-2.5355 -1.089835,-3.2695 -3.1138132,-3.2695 -1.4456985,0 -2.8691559,0.4226 -3.7143337,0.912 l 0.2446567,1.3789 c 0.9119024,-0.4448 2.1574275,-0.7561 3.2917451,-0.7561 1.4012161,0 1.9127701,0.6894 1.7348391,2.0239 l -0.200174,1.2678 -1.0453519,0.1334 c -2.6912238,0.4226 -5.3157233,0.8452 -5.7383122,3.8255 -0.3113813,2.1352 0.9563854,3.0916 2.6467411,3.0916 1.0675928,0 2.3798431,-0.4003 3.4251938,-1.5568 z"/>
+  </g>
  </g>
- <g fill-rule="evenodd">
-  <path fill="url(#b)" d="m54 17l-14-14v14z"/>
-  <path opacity=".2" fill="url(#c)" d="m40 17l14 14v-14z"/>
- </g>
- <path fill="#5e6b78" d="m29.694 41.36c-1.808 0-3.04-.906-2.712-3.214.411-2.884 2.136-3.832 7.601-4.615.04 0 1.725-.288 1.725-.288l-.699 5.109c-1.48 1.853-4.149 3.01-5.916 3.01m5.628-.248l.083 2.389h2.341l2.136-15.45c.658-4.697-2.01-6.06-5.751-6.06-2.671 0-5.3.783-6.86 1.689l.451 2.554c1.685-.823 3.986-1.401 6.079-1.401 2.589 0 3.533 1.278 3.205 3.749l-.37 2.349-1.931.247c-4.97.783-9.819 1.566-10.598 7.086-.576 3.955 1.767 5.727 4.889 5.727 1.973 0 4.396-.741 6.327-2.884"/>
 </svg>

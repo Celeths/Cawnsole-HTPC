@@ -1,26 +1,13 @@
-<svg width="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" height="64" xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <linearGradient id="a" y1="17" y2="31" x1="40" x2="54" gradientUnits="userSpaceOnUse" gradientTransform="translate(174 296.36)">
-   <stop stop-color="#060606"/>
-   <stop offset="1" stop-opacity="0"/>
-  </linearGradient>
-  <linearGradient id="b" y1="392.36" y2="336.36" x2="0" gradientUnits="userSpaceOnUse" gradientTransform="translate(126-36)">
-   <stop stop-color="#ffffff" stop-opacity="0"/>
-   <stop offset="1" stop-color="#ffffff" stop-opacity=".2"/>
-  </linearGradient>
-  <path id="c" d="m184 357.36v-58h30l14 14v44h-14z"/>
- </defs>
- <g transform="translate(-174-296.36)">
-  <use fill="#ff8b23" xlink:href="#c"/>
-  <g color-rendering="auto" color-interpolation-filters="linearRGB" shape-rendering="auto" image-rendering="auto" text-rendering="auto" color-interpolation="sRGB" color="#000000" transform="scale(1-1)">
-   <rect opacity=".5" x="184" y="-300.36" width="30" fill="#ffffff" height="1"/>
-   <rect opacity=".25" x="184" y="-357.36" width="44" height="1"/>
-  </g>
-  <g fill-rule="evenodd">
-   <path opacity=".5" fill="#ffffff" d="m228 313.36l-14-14v14z"/>
-   <path opacity=".2" fill="url(#a)" d="m214 313.36l14 14v-14z"/>
-  </g>
-  <use fill="url(#b)" xlink:href="#c"/>
-  <path opacity=".9" color-interpolation-filters="linearRGB" color="#000000" image-rendering="auto" color-rendering="auto" d="m195 318.36v2h-2v20h26v-20h-2v-2zm1 1h20v1h-20zm-2 2h24v18h-24zm10 5v8l5-4z" color-interpolation="sRGB" text-rendering="auto" fill="#ffffff" shape-rendering="auto"/>
- </g>
+<!-- Created with Inkscape (http://www.inkscape.org/) --><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="22" version="1.1" height="22" id="svg2" inkscape:version="0.91 r13725" sodipodi:docname="x-office-presentation.svg">
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="709" inkscape:window-height="480" id="namedview7" showgrid="false" inkscape:zoom="10.727273" inkscape:cx="11" inkscape:cy="11" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="0" inkscape:current-layer="svg2"/>
+  <defs id="defs3871"/>
+  <metadata id="metadata3874">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path inkscape:connector-curvature="0" style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ff8b23;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;fill-opacity:1" d="M 3,3 3,5 2,5 2,19 20,19 20,5 19,5 19,3 Z M 4,4 18,4 18,5 4,5 Z M 3,6 19,6 19,18 3,18 Z m 5,2 0,8 7,-4 z" id="path4" sodipodi:nodetypes="ccccccccccccccccccccccc"/>
 </svg>

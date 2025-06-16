@@ -1,26 +1,13 @@
-<svg width="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" height="64">
- <defs>
-  <linearGradient id="a" y1="61" y2="3" x2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0-1 0 64)">
-   <stop stop-color="#f27935"/>
-   <stop offset="1" stop-color="#f2784b"/>
-  </linearGradient>
-  <linearGradient id="b" y1="61" y2="47" x2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0-1 0 64)">
-   <stop stop-color="#f7ab89"/>
-   <stop offset="1" stop-color="#fbd2bf"/>
-  </linearGradient>
-  <linearGradient id="c" y1="17" x1="40" y2="31" x2="54" gradientUnits="userSpaceOnUse">
-   <stop stop-color="#383e51"/>
-   <stop offset="1" stop-color="#655c6f" stop-opacity="0"/>
-  </linearGradient>
- </defs>
- <path fill="url(#a)" d="m10 61v-58h30l14 14v44h-14z"/>
- <g transform="scale(1-1)">
-  <rect width="30" x="10" y="-4" fill="#ffffff" height="1" fill-opacity=".412"/>
-  <rect width="44" x="10" y="-61" fill="#2e3132" height="1" fill-opacity=".294"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="22" version="1.1" xmlns="http://www.w3.org/2000/svg" height="22" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+ <defs id="defs3871"/>
+ <metadata id="metadata3874"/>
+ <g inkscape:label="Capa 1" inkscape:groupmode="layer" id="layer1" transform="matrix(1 0 0 1 -326 -534.3622)">
+  <g inkscape:label="Capa 1" style="fill:#f27935" id="layer1-1" transform="matrix(1 0 0 1 -95.71429 8.57146)">
+   <path inkscape:connector-curvature="0" style="color:#4d4d4d" id="rect3343" d="m 5,8 0,3 1,0 0,-1 4,0 0,1 1,0 0,-3 -1,0 0,1 L 6,9 6,8 5,8 Z m 6,6 0,3 1,0 0,-1 4,0 0,1 1,0 0,-3 -1,0 0,1 -4,0 0,-1 -1,0 z" transform="matrix(1 0 0 1 421.71429 525.79074)"/>
+   <path inkscape:connector-curvature="0" style="color:#4d4d4d" id="rect3370" d="m 6,3 c 0,0 -1,-3e-5 -1,1 l -2,0 0,3 0,11 0,1 16,0 0,-1 0,-11 0,-3 -2,0 C 17,2.99997 16,3 16,3 l -3,0 c 0,0 -1,-3e-5 -1,1 L 10,4 C 10,2.99997 9,3 9,3 L 6,3 Z M 6,4 9,4 9,5 6,5 6,4 Z m 7,0 3,0 0,1 -3,0 0,-1 z M 4,7 18,7 18,18 4,18 4,7 Z" transform="matrix(1 0 0 1 421.71429 525.79074)"/>
+  </g>
  </g>
- <g fill-rule="evenodd">
-  <path fill="url(#b)" d="m54 17l-14-14v14z"/>
-  <path opacity=".2" fill="url(#c)" d="m40 17l14 14v-14z"/>
- </g>
- <path fill="#fbd2bf" d="m24 22a1 1 0 0 0 -1 1h-2v21h22v-21h-2a1 1 0 0 0 -1 -1h-5a1 1 0 0 0 -1 1h-3a1 1 0 0 0 -1 -1zm0 1h6.449v1H24zm11 0h5v1h-5zm-13 4h20v16h-20zm2 2v5h1v-2h6v2h1v-5h-1v2h-6v-2zm8 7v5.25h1v-2.25h6v2h1v-5h-1v2h-6v-2z"/>
 </svg>

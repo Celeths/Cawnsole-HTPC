@@ -1,26 +1,19 @@
-<svg width="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" height="64" xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <linearGradient id="a" y1="61" y2="3" x2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0-1 0 64)">
-   <stop stop-color="#3a539b"/>
-   <stop offset="1" stop-color="#3f5aa9"/>
-  </linearGradient>
-  <linearGradient id="b" y1="61" y2="47" x2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0-1 0 64)">
-   <stop stop-color="#97aad8"/>
-   <stop offset="1" stop-color="#c1cae7"/>
-  </linearGradient>
-  <linearGradient id="c" y1="17" x1="40" y2="31" x2="54" gradientUnits="userSpaceOnUse">
-   <stop stop-color="#383e51"/>
-   <stop offset="1" stop-color="#655c6f" stop-opacity="0"/>
-  </linearGradient>
-  <path opacity=".2" fill="url(#c)" fill-rule="evenodd" id="d" d="m40 17l14 14v-14z"/>
- </defs>
- <path fill="url(#a)" d="m10 61v-58h30l14 14v44h-14z"/>
- <g transform="scale(1-1)">
-  <rect width="30" x="10" y="-4" fill="#ffffff" height="1" fill-opacity=".412"/>
-  <rect width="44" x="10" y="-61" fill="#2e3132" height="1" fill-opacity=".294"/>
- </g>
- <path fill="url(#b)" fill-rule="evenodd" d="m54 17l-14-14v14z"/>
- <use xlink:href="#d"/>
- <use xlink:href="#d"/>
- <path opacity=".75" fill="#ffffff" color-rendering="auto" color-interpolation-filters="linearRGB" shape-rendering="auto" image-rendering="auto" text-rendering="auto" color-interpolation="sRGB" color="#000000" d="m21 24c-.554 0-1 .446-1 1v16c0 .554.446 1 1 1h22c.554 0 1-.446 1-1v-16c0-.554-.446-1-1-1zm0 1h.047l7.525 7.182-7.572 7.227zm1.258 0h19.484l-9.742 9.297zm20.695 0h.047v14.408l-7.572-7.227zm-13.775 7.76l2.822 2.695 2.822-2.695 8.178 7.807v.434h-22v-.434z"/>
+<!-- Created with Inkscape (http://www.inkscape.org/) --><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="22" version="1.1" height="22" id="svg2" inkscape:version="0.91 r13725" sodipodi:docname="application-msoutlook.svg">
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1360" inkscape:window-height="708" id="namedview14" showgrid="true" inkscape:zoom="21.454545" inkscape:cx="11.321498" inkscape:cy="9.308379" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="outlook" inkscape:object-nodes="true" inkscape:snap-global="false">
+    <inkscape:grid type="xygrid" id="grid4151"/>
+  </sodipodi:namedview>
+  <defs id="defs3871"/>
+  <metadata id="metadata3874">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Capa 1" inkscape:groupmode="layer" id="layer1" transform="matrix(1 0 0 1 -326 -534.3622)">
+    <g transform="matrix(0.18204292,0,0,0.18204292,269.77536,537.6271)" id="outlook">
+      <path style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#3c56a0;fill-opacity:1;fill-rule:nonzero;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" d="M 2,3 C 1.446,3 1,3.446 1,4 L 1,4.3339844 1,17.666016 1,18 c 0,0.554 0.446,1 1,1 l 18,0 c 0.554,0 1,-0.446 1,-1 L 21,17.666016 21,4.3339844 21,4 C 21,3.446 20.554,3 20,3 Z M 2.9999997,4.0000001 19,4.0000001 11,11.567366 Z M 2,4.4550781 8.1425781,10.318359 2,16.183594 Z m 18,0 0,11.7265629 -6.142578,-5.863282 z M 8.9176037,11.049438 11,13.044922 13.038458,11.113885 20,17.51098 20,18 1.9999997,18 l 0,-0.548596 z" transform="matrix(5.4932101,0,0,5.4932101,308.85376,-17.934782)" id="path36" inkscape:connector-curvature="0" sodipodi:nodetypes="ssccssssccssscccccccccccccccccccc"/>
+    </g>
+  </g>
 </svg>

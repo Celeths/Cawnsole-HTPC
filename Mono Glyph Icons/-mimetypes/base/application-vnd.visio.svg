@@ -1,28 +1,59 @@
-<svg width="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" height="64" xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <linearGradient id="a" y1="61" y2="3" x2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0-1 0 64)">
-   <stop stop-color="#3a539b"/>
-   <stop offset="1" stop-color="#3f5aa9"/>
-  </linearGradient>
-  <linearGradient id="b" y1="17" x1="40" y2="31" x2="54" gradientUnits="userSpaceOnUse">
-   <stop stop-color="#383e51"/>
-   <stop offset="1" stop-color="#655c6f" stop-opacity="0"/>
-  </linearGradient>
-  <linearGradient id="c" y1="2.642" y2="61" x2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0-1 0 64)">
-   <stop stop-color="#ffffff" stop-opacity="0"/>
-   <stop offset="1" stop-color="#ffffff" stop-opacity=".2"/>
-  </linearGradient>
-  <path id="d" d="m10 61v-58h30l14 14v44h-14z"/>
- </defs>
- <use fill="url(#a)" xlink:href="#d"/>
- <g transform="scale(1-1)">
-  <rect width="30" x="10" opacity=".5" y="-4" fill="#ffffff" height="1"/>
-  <rect width="44" x="10" opacity=".25" y="-61" height="1"/>
- </g>
- <g fill-rule="evenodd">
-  <path opacity=".5" fill="#ffffff" d="m54 17l-14-14v14z"/>
-  <path opacity=".2" fill="url(#b)" d="m40 17l14 14v-14z"/>
- </g>
- <path opacity=".75" fill="#ffffff" d="m22 22c-.554 0-1 .446-1 1v20c0 .554.446 1 1 1h20c.554 0 1-.446 1-1v-20c0-.554-.446-1-1-1zm0 1h20v20h-20zm15.5 1.5l-2.5 2.5h-6.05a2.5 2.5 0 0 0 -2.449219 -2 2.5 2.5 0 0 0 -2.5 2.5 2.5 2.5 0 0 0 2 2.445312v9.05h4v2h5v-2h3v-9l2.5-2.5zm0 1.199l1.801 1.801-1.801 1.801-1.5-1.5v-.602zm-11 .300781a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1 -1.5 1.5 1.5 1.5 0 0 1 -1.5 -1.5 1.5 1.5 0 0 1 1.5 -1.5m2.445 2h6.05l2 2v8h-2v-2h-5v2h-3v-8.05a2.5 2.5 0 0 0 1.945312 -1.949219m2.055 9h3v3h-3z"/>
- <use fill="url(#c)" xlink:href="#d"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="22"
+   version="1.1"
+   height="22"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="application-vnd.visio.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1360"
+     inkscape:window-height="708"
+     id="namedview7"
+     showgrid="true"
+     inkscape:zoom="10.011011"
+     inkscape:cx="12.402356"
+     inkscape:cy="8.994274"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4140" />
+  </sodipodi:namedview>
+  <defs
+     id="defs3871" />
+  <metadata
+     id="metadata3874">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="opacity:1;fill:#3c559f;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 16.5 2 L 13.5 5 L 7.9492188 5 A 2.5 2.5 0 0 0 5.5 3 A 2.5 2.5 0 0 0 3 5.5 A 2.5 2.5 0 0 0 5 7.9453125 L 5 17 L 6 17 L 8 17 L 8 19 L 13 19 L 13 17 L 16 17 L 17 17 L 17 8.5 L 20 5.5 L 16.5 2 z M 16.5 3.4003906 L 18.599609 5.5 L 16.5 7.5996094 L 14.400391 5.5 L 16.5 3.4003906 z M 5.5 4 A 1.5 1.5 0 0 1 7 5.5 A 1.5 1.5 0 0 1 5.5 7 A 1.5 1.5 0 0 1 4 5.5 A 1.5 1.5 0 0 1 5.5 4 z M 7.9453125 6 L 13.5 6 L 16 8.5 L 16 16 L 13 16 L 13 14 L 8 14 L 8 16 L 6 16 L 6 7.9492188 A 2.5 2.5 0 0 0 7.9453125 6 z M 9 15 L 12 15 L 12 18 L 9 18 L 9 15 z "
+     id="path4146" />
 </svg>
