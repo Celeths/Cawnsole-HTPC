@@ -11,7 +11,7 @@ DisplayDepth=32
 Example=folder
 
 # Directory list
-Directories=places/folders,places/symbolic,devices/symbolic,categories/symbolic,preferences/symbolic,emotes/symbolic,emblems/symbolic,status/symbolic,apps/symbolic
+Directories=places/folders,places/symbolic,devices/symbolic,categories/symbolic,preferences/symbolic,emotes/symbolic,emblems/symbolic,status/symbolic,apps/symbolic,actions/symbolic
 
 [places/symbolic]
 Context=Places
@@ -71,6 +71,13 @@ Type=Scalable
 
 [apps/symbolic]
 Context=Applications
+Size=32
+MinSize=8
+MaxSize=512
+Type=Scalable
+
+[actions/symbolic]
+Context=Actions
 Size=32
 MinSize=8
 MaxSize=512
