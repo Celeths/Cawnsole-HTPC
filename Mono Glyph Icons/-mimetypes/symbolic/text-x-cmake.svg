@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg height="48" width="48" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style type="text/css" id="current-color-scheme">.ColorScheme-Highlight { color:#000000; } .ColorScheme-Text { color:#ffffff; }</style>
-  </defs>
-  <path d="M 23.104 4.759 C 23.273 4.42 23.619 4.206 23.998 4.206 C 24.377 4.206 24.723 4.42 24.892 4.759 L 43.288 41.556 L 43.291 41.562 C 43.479 41.937 43.412 42.39 43.125 42.695 C 42.905 42.927 42.594 43.037 42.287 43.003 L 5.707 43 C 5.614 43.01 5.519 43.007 5.426 42.991 C 5.069 42.943 4.761 42.706 4.628 42.364 C 4.489 42.009 4.565 41.608 4.817 41.329 Z M 25.797 24.917 L 17.68 31.641 L 26.582 35.297 Z" style="stroke-linejoin: round; stroke-width: 2px;"/>
-</svg>

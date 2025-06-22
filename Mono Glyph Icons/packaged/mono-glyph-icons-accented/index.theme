@@ -11,72 +11,86 @@ DisplayDepth=32
 Example=folder
 
 # Directory list
-Directories=places/folders,places/symbolic,devices/symbolic,categories/symbolic,preferences/symbolic,emotes/symbolic,emblems/symbolic,status/symbolic,apps/symbolic,actions/symbolic
+Directories=places/icons,places/glyphs,devices/glyphs,categories/glyphs,preferences/glyphs,emotes/glyphs,emblems/glyphs,status/glyphs,apps/glyphs,actions/glyphs,mimetypes/icons,mimetypes/glyphs
 
-[places/symbolic]
+[places/glyphs]
 Context=Places
 Size=32
 MinSize=8
 MaxSize=32
 Type=Scalable
 
-[places/folders]
+[places/icons]
 Context=Places
 Size=64
 MinSize=48
 MaxSize=512
 Type=Scalable
 
-[devices/symbolic]
+[mimetypes/glyphs]
+Context=MimeTypes
+Size=32
+MinSize=8
+MaxSize=32
+Type=Scalable
+
+[mimetypes/icons]
+Context=MimeTypes
+Size=64
+MinSize=48
+MaxSize=512
+Type=Scalable
+
+[devices/glyphs]
 Context=Devices
 Size=32
 MinSize=8
 MaxSize=512
 Type=Scalable
 
-[categories/symbolic]
+[categories/glyphs]
 Context=Categories
 Size=32
 MinSize=8
 MaxSize=512
 Type=Scalable
 
-[preferences/symbolic]
+[preferences/glyphs]
 Context=Applications
 Size=32
 MinSize=8
 MaxSize=512
 Type=Scalable
 
-[emotes/symbolic]
+[emotes/glyphs]
 Context=Emotes
 Size=32
 MinSize=8
 MaxSize=512
 Type=Scalable
 
-[emblems/symbolic]
+[emblems/glyphs]
 Context=Emblems
 Size=32
 MinSize=8
 MaxSize=512
 Type=Scalable
 
-[status/symbolic]
+[status/glyphs]
 Context=Status
 Size=32
 MinSize=8
 MaxSize=512
 Type=Scalable
 
-[apps/symbolic]
+[apps/glyphs]
 Context=Applications
 Size=32
 MinSize=8
 MaxSize=512
 Type=Scalable
 
-[actions/symbolic]
+[actions/glyphs]
 Context=Actions
 Size=32
 MinSize=8
