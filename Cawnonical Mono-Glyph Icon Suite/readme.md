@@ -26,10 +26,8 @@ Mono Glyph Icons - Folder Set is a set of universally understood, visually pleas
 
 <img src="previews/3.png" alt="Preview" width="300px">
 
+</span>
 <br>
-
-
-
 <span>
 
 <img src="previews/6.png" alt="Preview" width="175px">
@@ -38,10 +36,7 @@ Mono Glyph Icons - Folder Set is a set of universally understood, visually pleas
 
 
 </span>
-
-</span>
 </center>
-
 <br>
 
 This icon suite is a system-wide set of icons based on the Material Design icons from Google, and inspired by Breeze by KDE.
