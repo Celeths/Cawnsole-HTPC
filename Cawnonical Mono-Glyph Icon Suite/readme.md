@@ -7,64 +7,78 @@
 
 *The folder set of the Mono Glyph Icon set for the **Cawnsole HTPC project**.*
 
+
+Mono Glyph Icons - Folder Set is a set of universally understood, visually pleasant, and function first folder icons.
+
+<img src="previews/0.png" alt="Preview" width="300px">
+
+<br> 
+
 <span>
 
-<img src="previews/preview-0.png" alt="Preview" width="175px">
+<img src="previews/1.png" alt="Preview" width="125px">
 
-<img src="previews/preview-1.png" alt="Preview" width="175px">
+<img src="previews/2.png" alt="Preview" width="125px">
 
-<img src="previews/preview-2.png" alt="Preview" width="175px">
+<img src="previews/4.png" alt="Preview" width="125px">
+
+<img src="previews/5.png" alt="Preview" width="125px">
+
+<img src="previews/3.png" alt="Preview" width="300px">
+
+<br>
+
+
+
+<span>
+
+<img src="previews/6.png" alt="Preview" width="175px">
+
+<img src="previews/7.png" alt="Preview" width="175px">
+
+
+</span>
 
 </span>
 </center>
 
-Mono Glyph Icons - Folder Set is a set of universally understood, visually pleasant, and function first folder icons.
-
-<img src="previews/preview-design.png" alt="Preview" width="300px">
-
-<br> 
-
 <br>
 
-All icons are svg files without defined fill values for individual objects. There are no paths or strokes, only shapes. All colors are defined in the \<svg> headers of each file. Unnecessary metadata has been removed to decrease size.
+This icon suite is a system-wide set of icons based on the Material Design icons from Google, and inspired by Breeze by KDE.
+
+Unlike similar themes, Cawnonical Mono-Glyph Icon Suite brings universally accessible glyph icons to all facets of the Linux desktop.
+
+There are over a thousand newly crafted icons, as well as the entire Google Material icons set, and the entire Google Noto emoji set for extra options. In total this around 10,000 unique glyphs.
 
 <hr>
 
 <center>
 
-### Folder Icon Sets with Symlinks
+### Icon Set Variants
+
 
 | Folder Set		| Fill Values				| Swatch      |		
 |:----------|:----------|:----------|
-| folders-accent	| fill="currentColor" 		|  <span style="font-size:0.65em">*Accent Color</span><span style="font-size:0.5em"> \*Freedesktop Icon Theme spec*</span>
+| accented	| fill="currentColor" 		|  <span style="font-size:0.65em">*Accent Color</span><span style="font-size:0.5em"> \*Freedesktop Icon Theme spec*</span>
 |||
-| folders-unfilled	| No fill value defined.	| <span style="font-size:0.65em">*Usually displays as black*</span>
+| text-fill	| fill="currentColor" 		|  <span style="font-size:0.65em">*Text Color</span><span style="font-size:0.5em"> \*Freedesktop Icon Theme spec*</span>
 |||
-| folders-black		| fill="black"				|  <span style="color:black;">████████████</span> |
-| folders-white		| fill="white"				| <span style="color:white;">████████████</span> |
-| folders-grey		| fill="grey"				| <span style="color:grey;">████████████</span> |
-| folders-blue		| fill="rgb(0,125,255)"		| <span style="color:rgb(0,125,255);">████████████</span> |
-| folders-brown		| fill="rgb(165,135,95)"	| <span style="color:rgb(165,135,95);">████████████</span> |
-| folders-cyan		| fill="rgb(50,175,230)"	| <span style="color:rgb(50,175,230);">████████████</span> |
-| folder-green		| fill="rgb(55,200,90)"		| <span style="color:rgb(55,200,90);">████████████</span> |
-| folders-indigo	| fill="rgb(90,90,215)"		| <span style="color:rgb(90,90,215);">████████████</span> |
-| folders-magenta	| fill="rgb(255,70,180)"	| <span style="color:rgb(255,70,180);">████████████</span> |
-| folders-mint		| fill="rgb(0,200,170)"		| <span style="color:rgb(0,200,170);">████████████</span> |
-| folders-orange	| fill="rgb(255,150,0)"		| <span style="color:rgb(255,150,0);">████████████</span> |
-| folders-pink		| fill="rgb(255,60,100)"	| <span style="color:rgb(255,60,100);">████████████</span> |
-| folders-red		| fill="rgb(255,50,50)"		| <span style="color:rgb(255,50,50);">████████████</span> |
-| folders-teal		| fill="rgb(50,175,200)"	| <span style="color:rgb(50,175,200);">████████████</span> |
-| folders-violet	| fill="rgb(175,85,225)"	| <span style="color:rgb(175,85,225);">████████████</span> |
-| folders-yellow	| fill="rgb(255,205,0)"		| <span style="color:rgb(255,205,0);">████████████</span> |
-
-##### *Tons of symlinks for tons of edge cases*
-
-<img src="previews/preview-symlink.png" alt="Preview" width="250px">
-
-### Folder Icon Sets without Symlinks
-
-| Folder Set		| Fill Values				| Swatch      |		
-|:----------|:----------|:----------|
-| base-folders	| No fill value defined.	| <span style="font-size:0.65em">*Usually displays as black*</span>
-
-</center>
+| unfilled	| No fill value defined.	| <span style="font-size:0.65em">*Usually displays as black*</span>
+|||
+| black		| fill="black"				|  <span style="color:black;">████████████</span> |
+| white		| fill="white"				| <span style="color:white;">████████████</span> |
+| grey		| fill="grey"				| <span style="color:grey;">████████████</span> |
+| blue		| fill="rgb(0,125,255)"		| <span style="color:rgb(0,125,255);">████████████</span> |
+| brown		| fill="rgb(165,135,95)"	| <span style="color:rgb(165,135,95);">████████████</span> |
+| cyan		| fill="rgb(50,175,230)"	| <span style="color:rgb(50,175,230);">████████████</span> |
+| green		| fill="rgb(55,200,90)"		| <span style="color:rgb(55,200,90);">████████████</span> |
+| lime		| fill="rgb(55,200,90)"		| <span style="color:rgb(55,200,90);">████████████</span> |
+| indigo	| fill="rgb(90,90,215)"		| <span style="color:rgb(90,90,215);">████████████</span> |
+| magenta	| fill="rgb(255,70,180)"	| <span style="color:rgb(255,70,180);">████████████</span> |
+| mint		| fill="rgb(0,200,170)"		| <span style="color:rgb(0,200,170);">████████████</span> |
+| orange	| fill="rgb(255,150,0)"		| <span style="color:rgb(255,150,0);">████████████</span> |
+| pink		| fill="rgb(255,60,100)"	| <span style="color:rgb(255,60,100);">████████████</span> |
+| red		| fill="rgb(255,50,50)"		| <span style="color:rgb(255,50,50);">████████████</span> |
+| teal		| fill="rgb(50,175,200)"	| <span style="color:rgb(50,175,200);">████████████</span> |
+| violet	| fill="rgb(175,85,225)"	| <span style="color:rgb(175,85,225);">████████████</span> |
+| yellow	| fill="rgb(255,205,0)"		| <span style="color:rgb(255,205,0);">████████████</span> |

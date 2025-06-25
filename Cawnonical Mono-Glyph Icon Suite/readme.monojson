@@ -325,7 +325,7 @@
     {
       "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
       "object_id" : "AA6B1023-97B8-49F5-B6CB-0C431080C125",
-      "text" : "This icon suite is a system-wide set of icons based on the Material Design icons from Google, and inspired by Breeze by KDE.\n\nUnlike similar themes, Cawnonical Mono-Glyph Icon Suite brings universally accessible glyph icons to all facets of the Linux desktop.\n\nThere are over a thousand newly crafted icons, as well as the entire Google Material icons set, and the entire Google Noto emoji set for extra options.",
+      "text" : "This icon suite is a system-wide set of icons based on the Material Design icons from Google, and inspired by Breeze by KDE.\n\nUnlike similar themes, Cawnonical Mono-Glyph Icon Suite brings universally accessible glyph icons to all facets of the Linux desktop.\n\nThere are over a thousand newly crafted icons, as well as the entire Google Material icons set, and the entire Google Noto emoji set for extra options. In total this around 10,000 unique glyphs.",
       "type_id" : 27
     },
     {
@@ -361,7 +361,7 @@
       "content_tixels" : "AF489CAD-3C4C-4D97-B469-FB2AF36694FA",
       "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
       "frame_anchor_ref" : "0C418D50-C5E5-4819-9FCC-E26A2CD5B886",
-      "frame_size" : "60,13",
+      "frame_size" : "60,14",
       "model_text" : "AA6B1023-97B8-49F5-B6CB-0C431080C125",
       "name" : "This icon suite is a system-wide set of…",
       "object_id" : "B36C89AE-1257-4ABE-A30A-AB0A246F7567",
