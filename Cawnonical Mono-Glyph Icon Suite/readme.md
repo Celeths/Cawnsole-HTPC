@@ -12,7 +12,7 @@ Mono Glyph Icons - Folder Set is a set of universally understood, visually pleas
 
 <img src="previews/0.png" alt="Preview" width="300px">
 
-<br> 
+<hr> 
 
 <span>
 
@@ -24,10 +24,13 @@ Mono Glyph Icons - Folder Set is a set of universally understood, visually pleas
 
 <img src="previews/5.png" alt="Preview" width="125px">
 
+</span>
+
+<hr>
+
 <img src="previews/3.png" alt="Preview" width="300px">
 
-</span>
-<br>
+<hr>
 <span>
 
 <img src="previews/6.png" alt="Preview" width="175px">
