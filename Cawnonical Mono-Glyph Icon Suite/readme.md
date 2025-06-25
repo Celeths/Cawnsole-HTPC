@@ -1,7 +1,7 @@
 <center>
 
-# Cawnsole - Mono Glyph Icons
-## Folder Set
+# Cawnonical Mono-Glyph
+## Icon Suite
 
 <break>
 

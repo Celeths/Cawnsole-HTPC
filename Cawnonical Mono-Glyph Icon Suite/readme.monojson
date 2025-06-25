@@ -1,0 +1,506 @@
+{
+  "header" : {
+    "v" : 5
+  },
+  "object_list" : [
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "name" : "Canvas 1",
+      "object_id" : "00818266-EBF6-4D44-A475-4E4EA6D3DD0C",
+      "subshape_refs" : [
+        "38816861-A6FF-4697-B13F-CAB5FD9D2FF2",
+        "A940F99A-51E5-4B26-9741-D375B92C27EF",
+        "DAAC216D-11FB-4D61-ADC0-7AE588782931",
+        "DDF8F9A2-2C64-41F8-9D7F-DE87F1930BDB",
+        "B36C89AE-1257-4ABE-A30A-AB0A246F7567",
+        "2E4A64E0-0780-4ADA-8D3A-8B4D37508FFF",
+        "561E302D-F954-44B8-92EF-F83616EBFB9A"
+      ],
+      "type_id" : 1
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "046939EE-C26B-496D-B556-E38C6ED780E5",
+      "rect_position" : 15,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "0C418D50-C5E5-4819-9FCC-E26A2CD5B886",
+      "point" : "0,25",
+      "type_id" : 11
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "0E290C22-DCB0-4D24-8D80-2BE9DE8CD7A8",
+      "rect_position" : 16,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "1045C149-96D7-42C4-B043-5DC7E88D97AD",
+      "type_id" : 18
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "10B902A1-BAFB-45F1-ABE6-173A5201F732",
+      "type_id" : 18
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "1CF64CEB-1CB1-466E-A29D-392548667F37",
+      "point" : "0,25",
+      "type_id" : 11
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "25AC22AB-FFDC-461F-87F0-DB0AC094C298",
+      "rect_position" : 15,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "2914B6E2-49BC-4519-B719-D4A8A5A63206",
+      "rect_position" : 19,
+      "type_id" : 12
+    },
+    {
+      "background_type" : 4,
+      "border_tixels" : "73821F60-C5D0-4038-9664-9EA53C1B10E5",
+      "content_tixels" : "CE9B4AB4-1BC2-45DB-86B9-E7B20A5CBA73",
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "frame_anchor_ref" : "8F61F8F6-9D98-42F0-B44C-5698423BCC6A",
+      "frame_size" : "51,8",
+      "model_text" : "3B354E4A-3498-4676-8465-DCCA5D8D2BBC",
+      "name" : "Cawnonical Mono-Glyph Icon Suite",
+      "object_id" : "2E4A64E0-0780-4ADA-8D3A-8B4D37508FFF",
+      "origin" : "4,0",
+      "position_refs" : [
+        "8F61F8F6-9D98-42F0-B44C-5698423BCC6A",
+        "9C9BF5B0-87ED-4516-ACC7-4E60446A4696",
+        "77538655-F70B-4D47-84EC-319D764C131B",
+        "574ACD0F-5F2A-4920-AE45-D434DD2E8C86",
+        "6F66154D-692C-471C-B9AD-1380736AB64A"
+      ],
+      "type_id" : 20
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "35C07BCE-60E8-470D-8D99-D9AE010C3DC8",
+      "point" : "0,0",
+      "type_id" : 11
+    },
+    {
+      "content_tixmap_ref" : "862AF1C0-DFBE-4D6C-84FD-7EFC0D0D3BB1",
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "name" : "Line 2",
+      "object_id" : "38816861-A6FF-4697-B13F-CAB5FD9D2FF2",
+      "position_refs" : [
+        "1CF64CEB-1CB1-466E-A29D-392548667F37",
+        "87F90190-5B1C-4E7D-997E-9586F07CD7FC",
+        "45CDD8BB-6809-4672-8332-D04AED35ED49",
+        "5ED12248-A9B7-4291-A8E8-1ED77C7020CD"
+      ],
+      "segment_end_refs" : [
+        "87F90190-5B1C-4E7D-997E-9586F07CD7FC",
+        "45CDD8BB-6809-4672-8332-D04AED35ED49"
+      ],
+      "segment_refs" : [
+        "F082CBE7-1439-4E37-AEC6-CACF3103A73B"
+      ],
+      "type_id" : 5
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "3968D4A8-ED96-459F-B6DF-D3B87561B91C",
+      "rect_position" : 16,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "letter_font_id" : "com.helftone.monodraw.figlet-font.digital",
+      "letter_font_name" : "Digital",
+      "object_id" : "3B354E4A-3498-4676-8465-DCCA5D8D2BBC",
+      "text" : "Cawnonical Mono-Glyph Icon Suite",
+      "type_id" : 27
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "45CDD8BB-6809-4672-8332-D04AED35ED49",
+      "position_ref" : "5ED12248-A9B7-4291-A8E8-1ED77C7020CD",
+      "type_id" : 10
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "4CAF2A42-BBF3-4C2E-8BCB-16DE1A0A38B6",
+      "point" : "0,44",
+      "type_id" : 11
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "4E5A5E66-C6EE-4AE1-95D3-B048998EE7A0",
+      "type_id" : 18
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "50AC354B-FFC0-4659-A83F-409A7046D5C1",
+      "rect_position" : 12,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "535BD080-E938-4AEA-A273-6BFBB99A9434",
+      "type_id" : 18
+    },
+    {
+      "border_tixels" : "B023F35F-4C7E-429C-8A22-F3E63CA8F811",
+      "content_tixels" : "D1EF96F4-9C81-4D7E-A48C-20E8FDF23B70",
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "frame_anchor_ref" : "35C07BCE-60E8-470D-8D99-D9AE010C3DC8",
+      "frame_size" : "60,17",
+      "model_text" : "B80DEF19-747A-4035-9A1C-81378B73EBB1",
+      "name" : "Cawnonical Mono-Glyph Icon Suite",
+      "object_id" : "561E302D-F954-44B8-92EF-F83616EBFB9A",
+      "position_refs" : [
+        "35C07BCE-60E8-470D-8D99-D9AE010C3DC8",
+        "6FB627AC-84E2-4326-B4B0-F8C7DB9B17A8",
+        "883254C4-BF2F-44D4-B033-21EDAA493068",
+        "0E290C22-DCB0-4D24-8D80-2BE9DE8CD7A8",
+        "AB3F5D4C-2A37-4DBD-9B43-2EAA9B03D6DD"
+      ],
+      "rectangular_border" : 5,
+      "type_id" : 20
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "574ACD0F-5F2A-4920-AE45-D434DD2E8C86",
+      "rect_position" : 16,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "5ED12248-A9B7-4291-A8E8-1ED77C7020CD",
+      "point" : "59,25",
+      "type_id" : 11
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "5F4CC6D8-8405-45F9-BAEE-2901BA479CF1",
+      "rect_position" : 15,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "6003DA82-8B82-4628-8077-49BD60B4F296",
+      "rect_position" : 19,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "6B586971-EFC7-41AC-89A9-350BC77A436A",
+      "type_id" : 18
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "6F66154D-692C-471C-B9AD-1380736AB64A",
+      "rect_position" : 19,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "6FB627AC-84E2-4326-B4B0-F8C7DB9B17A8",
+      "rect_position" : 12,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "72527AA3-FF2C-4333-965E-E2454C3E95E0",
+      "rect_position" : 16,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "73821F60-C5D0-4038-9664-9EA53C1B10E5",
+      "type_id" : 18
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "77538655-F70B-4D47-84EC-319D764C131B",
+      "rect_position" : 15,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "7AFDF477-D2D6-493C-9219-CD18AC8BA67B",
+      "rect_position" : 16,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "7BBCB002-4CE8-45CB-A8C3-31642437B8C5",
+      "rect_position" : 19,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "814703ED-5BC7-4D34-828C-DB925EC937B9",
+      "rect_position" : 16,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "862AF1C0-DFBE-4D6C-84FD-7EFC0D0D3BB1",
+      "type_id" : 18
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "87F90190-5B1C-4E7D-997E-9586F07CD7FC",
+      "position_ref" : "1CF64CEB-1CB1-466E-A29D-392548667F37",
+      "type_id" : 10
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "883254C4-BF2F-44D4-B033-21EDAA493068",
+      "rect_position" : 15,
+      "type_id" : 12
+    },
+    {
+      "alignment" : 0,
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "886479D3-9219-474D-8380-91A66C9EDE28",
+      "position" : 0,
+      "text" : "ColorScheme-Highlight\n\nColorScheme-Text\n\nrgb(0, 0, 0)\nrgb(127, 127, 127)\nrgb(255, 255, 255)\nrgb(140, 220, 60)\nrgb(55, 200, 90)\nrgb(0, 200, 170)\nrgb(50, 190, 200)\nrgb(50, 175, 230)\nrgb(0, 125, 255)\nrgb(90, 90, 215)\nrgb(175, 80, 225)\nrgb(255, 70, 180)\nrgb(255, 60, 110)\nrgb(255, 60, 50)\nrgb(255, 150, 0)\nrgb(255, 205, 0)\nrgb(165, 135, 95)\n\nno fill value",
+      "type_id" : 27
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "8F61F8F6-9D98-42F0-B44C-5698423BCC6A",
+      "point" : "0,17",
+      "type_id" : 11
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "9071B87C-47DE-4C3E-8E69-19C0723E0F9D",
+      "rect_position" : 12,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "91281D87-5AB4-4761-85D5-3D38963FD0AC",
+      "point" : "-1,44",
+      "type_id" : 11
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "9C9BF5B0-87ED-4516-ACC7-4E60446A4696",
+      "rect_position" : 12,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "A3B2DB45-8445-440B-8AD2-337F6EA58959",
+      "rect_position" : 12,
+      "type_id" : 12
+    },
+    {
+      "border_tixels" : "F372A3C8-7A54-463F-BE73-8D001EC43D5C",
+      "content_offset" : "1,0",
+      "content_tixels" : "6B586971-EFC7-41AC-89A9-350BC77A436A",
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "frame_anchor_ref" : "91281D87-5AB4-4761-85D5-3D38963FD0AC",
+      "frame_size" : "31,25",
+      "model_text" : "886479D3-9219-474D-8380-91A66C9EDE28",
+      "name" : "ColorScheme-Highlight\n\nColorScheme-Text\n…",
+      "object_id" : "A940F99A-51E5-4B26-9741-D375B92C27EF",
+      "origin" : "30,-1",
+      "position_refs" : [
+        "91281D87-5AB4-4761-85D5-3D38963FD0AC",
+        "50AC354B-FFC0-4659-A83F-409A7046D5C1",
+        "046939EE-C26B-496D-B556-E38C6ED780E5",
+        "72527AA3-FF2C-4333-965E-E2454C3E95E0",
+        "6003DA82-8B82-4628-8077-49BD60B4F296"
+      ],
+      "type_id" : 20
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "AA6B1023-97B8-49F5-B6CB-0C431080C125",
+      "text" : "This icon suite is a system-wide set of icons based on the Material Design icons from Google, and inspired by Breeze by KDE.\n\nUnlike similar themes, Cawnonical Mono-Glyph Icon Suite brings universally accessible glyph icons to all facets of the Linux desktop.\n\nThere are over a thousand newly crafted icons, as well as the entire Google Material icons set, and the entire Google Noto emoji set for extra options.",
+      "type_id" : 27
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "AB3F5D4C-2A37-4DBD-9B43-2EAA9B03D6DD",
+      "rect_position" : 19,
+      "type_id" : 12
+    },
+    {
+      "canvas_refs" : [
+        "00818266-EBF6-4D44-A475-4E4EA6D3DD0C"
+      ],
+      "object_id" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "shape_seq_numbers" : {
+        "2" : 2,
+        "4" : 7,
+        "6" : 1
+      },
+      "type_id" : 0
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "AF489CAD-3C4C-4D97-B469-FB2AF36694FA",
+      "type_id" : 18
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "B023F35F-4C7E-429C-8A22-F3E63CA8F811",
+      "type_id" : 18
+    },
+    {
+      "border_tixels" : "535BD080-E938-4AEA-A273-6BFBB99A9434",
+      "content_tixels" : "AF489CAD-3C4C-4D97-B469-FB2AF36694FA",
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "frame_anchor_ref" : "0C418D50-C5E5-4819-9FCC-E26A2CD5B886",
+      "frame_size" : "60,13",
+      "model_text" : "AA6B1023-97B8-49F5-B6CB-0C431080C125",
+      "name" : "This icon suite is a system-wide set of…",
+      "object_id" : "B36C89AE-1257-4ABE-A30A-AB0A246F7567",
+      "origin" : "0,1",
+      "position_refs" : [
+        "0C418D50-C5E5-4819-9FCC-E26A2CD5B886",
+        "9071B87C-47DE-4C3E-8E69-19C0723E0F9D",
+        "25AC22AB-FFDC-461F-87F0-DB0AC094C298",
+        "3968D4A8-ED96-459F-B6DF-D3B87561B91C",
+        "7BBCB002-4CE8-45CB-A8C3-31642437B8C5"
+      ],
+      "type_id" : 20
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "B3FC6E30-7C16-4648-A5D5-70AD2CB2C7FF",
+      "rect_position" : 12,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "B7C86C0C-F05D-4A3A-9B7E-5134EB83BBCA",
+      "text" : "All icons are SVG files and are completely themed to the corresponding colour.",
+      "type_id" : 27
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "letter_font_id" : "com.helftone.monodraw.figlet-font.contrib.serifcap",
+      "letter_font_name" : "Serif Cap",
+      "object_id" : "B80DEF19-747A-4035-9A1C-81378B73EBB1",
+      "text" : "Cawnonical Mono-Glyph Icon Suite",
+      "type_id" : 27
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "C15F86EA-D6D8-4272-9636-02B430311F06",
+      "rect_position" : 19,
+      "type_id" : 12
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "CAC33614-C6FF-4C19-A797-D71D1C89F603",
+      "type_id" : 18
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "CE9B4AB4-1BC2-45DB-86B9-E7B20A5CBA73",
+      "tixels" : {
+        "text_content" : [
+          "-",
+          " ",
+          "-",
+          "-",
+          " ",
+          "-"
+        ],
+        "text_points" : [
+          "25,1",
+          "25,2",
+          "25,3",
+          "24,4",
+          "24,5",
+          "24,6"
+        ]
+      },
+      "type_id" : 18
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "D1EF96F4-9C81-4D7E-A48C-20E8FDF23B70",
+      "type_id" : 18
+    },
+    {
+      "border_tixels" : "1045C149-96D7-42C4-B043-5DC7E88D97AD",
+      "content_tixels" : "4E5A5E66-C6EE-4AE1-95D3-B048998EE7A0",
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "frame_anchor_ref" : "4CAF2A42-BBF3-4C2E-8BCB-16DE1A0A38B6",
+      "frame_size" : "30,25",
+      "model_text" : "FF4670B1-0D5F-4BAC-9929-BC4D1772811C",
+      "name" : "• Accented\n\n• Text-Fill\n\n• Black\n•…",
+      "object_id" : "DAAC216D-11FB-4D61-ADC0-7AE588782931",
+      "origin" : "0,-1",
+      "position_refs" : [
+        "4CAF2A42-BBF3-4C2E-8BCB-16DE1A0A38B6",
+        "A3B2DB45-8445-440B-8AD2-337F6EA58959",
+        "5F4CC6D8-8405-45F9-BAEE-2901BA479CF1",
+        "814703ED-5BC7-4D34-828C-DB925EC937B9",
+        "C15F86EA-D6D8-4272-9636-02B430311F06"
+      ],
+      "type_id" : 20
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "DC127A38-2AB2-4C9B-B736-1C7BEE0B6393",
+      "point" : "0,40",
+      "type_id" : 11
+    },
+    {
+      "border_tixels" : "10B902A1-BAFB-45F1-ABE6-173A5201F732",
+      "content_tixels" : "CAC33614-C6FF-4C19-A797-D71D1C89F603",
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "frame_anchor_ref" : "DC127A38-2AB2-4C9B-B736-1C7BEE0B6393",
+      "frame_size" : "60,4",
+      "model_text" : "B7C86C0C-F05D-4A3A-9B7E-5134EB83BBCA",
+      "name" : "All icons are SVG files and are…",
+      "object_id" : "DDF8F9A2-2C64-41F8-9D7F-DE87F1930BDB",
+      "position_refs" : [
+        "DC127A38-2AB2-4C9B-B736-1C7BEE0B6393",
+        "B3FC6E30-7C16-4648-A5D5-70AD2CB2C7FF",
+        "F7CEE2CE-87D9-4342-A14A-4D4D5F72D41D",
+        "7AFDF477-D2D6-493C-9219-CD18AC8BA67B",
+        "2914B6E2-49BC-4519-B719-D4A8A5A63206"
+      ],
+      "type_id" : 20
+    },
+    {
+      "direction" : 1,
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "F082CBE7-1439-4E37-AEC6-CACF3103A73B",
+      "type_id" : 9
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "F372A3C8-7A54-463F-BE73-8D001EC43D5C",
+      "type_id" : 18
+    },
+    {
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "F7CEE2CE-87D9-4342-A14A-4D4D5F72D41D",
+      "rect_position" : 15,
+      "type_id" : 12
+    },
+    {
+      "alignment" : 0,
+      "doc_ref" : "ACC60415-D794-45E7-B877-CF6B4755549F",
+      "object_id" : "FF4670B1-0D5F-4BAC-9929-BC4D1772811C",
+      "position" : 0,
+      "text" : "• Accented\n\n• Text-Fill\n\n• Black\n• Grey\n• White\n• Lime\n• Green\n• Mint\n• Teal\n• Cyan\n• Blue\n• Indigo\n• Violet\n• Magenta\n• Pink\n• Red\n• Orange\n• Yellow\n• Brown\n\n• Unfilled",
+      "type_id" : 27
+    }
+  ]
+}
