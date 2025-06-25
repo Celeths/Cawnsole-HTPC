@@ -8,7 +8,7 @@
 *The folder set of the Mono Glyph Icon set for the **Cawnsole HTPC project**.*
 
 
-Mono Glyph Icons - Folder Set is a set of universally understood, visually pleasant, and function first folder icons.
+Mono Glyph Icons - Folder Set is a set of universally understood, visually pleasant, and function first glyph icons.
 
 <img src="previews/0.png" alt="Preview" width="300px">
 
