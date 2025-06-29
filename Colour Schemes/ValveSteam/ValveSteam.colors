@@ -1,10 +1,10 @@
 [ColorEffects:Disabled]
 Color=56,56,56
-ColorAmount=0.6000000000000001
-ColorEffect=1
-ContrastAmount=0.35000000000000003
-ContrastEffect=2
-IntensityAmount=-0.15000000000000002
+ColorAmount=0.5
+ColorEffect=0
+ContrastAmount=0.4
+ContrastEffect=1
+IntensityAmount=0.1
 IntensityEffect=2
 
 [ColorEffects:Inactive]
@@ -31,18 +31,6 @@ ForegroundNeutral=255,184,108
 ForegroundNormal=255,255,255
 ForegroundPositive=80,250,122
 ForegroundVisited=41,128,185
-
-[Colors:Complementary]
-ForegroundInactive=125,142,163
-ForegroundLink=61,174,233
-ForegroundNegative=255,85,85
-ForegroundNeutral=255,184,108
-ForegroundPositive=80,250,122
-ForegroundVisited=125,142,163
-
-[Colors:Header]
-DecorationFocus=61,174,233
-DecorationHover=41,128,185
 
 [Colors:Selection]
 BackgroundAlternate=29,153,243
@@ -100,20 +88,26 @@ ForegroundNormal=248,248,242
 ForegroundPositive=80,250,122
 ForegroundVisited=41,128,185
 
+[Colors:Complementary]
+ForegroundInactive=125,142,163
+ForegroundLink=61,174,233
+ForegroundNegative=255,85,85
+ForegroundNeutral=255,184,108
+ForegroundPositive=80,250,122
+ForegroundVisited=125,142,163
+
 [General]
 ColorScheme=Steam
 Name=Valve Steam
-TintFactor=0.1
-TitlebarIsAccentColored=false
 shadeSortColumn=true
 
 [KDE]
-contrast=5
+contrast=4
 
 [WM]
-activeBackground=23,34,45
-activeBlend=15,20,30
-activeForeground=255,255,255
+activeBackground=47,52,63
+activeBlend=47,52,63
+activeForeground=211,218,227
 inactiveBackground=47,52,63
 inactiveBlend=47,52,63
 inactiveForeground=102,106,115
