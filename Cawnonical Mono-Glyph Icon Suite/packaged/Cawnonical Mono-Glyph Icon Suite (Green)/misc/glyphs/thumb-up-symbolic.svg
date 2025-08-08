@@ -1,0 +1,1 @@
+thumb-up.svg

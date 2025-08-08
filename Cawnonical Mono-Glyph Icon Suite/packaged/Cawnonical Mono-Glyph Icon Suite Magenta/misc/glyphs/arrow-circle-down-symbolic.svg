@@ -1,1 +1,0 @@
-arrow-circle-down.svg

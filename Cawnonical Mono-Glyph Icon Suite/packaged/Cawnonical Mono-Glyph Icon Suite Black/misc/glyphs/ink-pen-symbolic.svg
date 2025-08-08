@@ -1,1 +1,0 @@
-ink-pen.svg

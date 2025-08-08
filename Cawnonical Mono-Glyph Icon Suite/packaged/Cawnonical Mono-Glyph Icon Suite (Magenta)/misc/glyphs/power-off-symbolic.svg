@@ -1,0 +1,1 @@
+power-off.svg

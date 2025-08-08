@@ -1,1 +1,0 @@
-pie-chart.svg
