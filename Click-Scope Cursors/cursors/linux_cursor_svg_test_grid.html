@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Linux Cursor Test Grid (SVG first, PNG/GIF fallback)</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#111827; --tile:#1f2937; --text:#e5e7eb; --muted:#93c5fd; --ring:rgba(124,58,237,.55);
+  }
+  *{box-sizing:border-box}
+  body{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Inter,Roboto; background:linear-gradient(180deg,#0b1222,#0f172a); color:var(--text); margin:0; padding:32px}
+  h1{font-size:20px;margin:0 0 8px;font-weight:700}
+  p.note{margin:0 0 18px;color:var(--muted)}
+  .wrap{max-width:1100px;margin:0 auto;background:var(--panel);padding:18px 18px 22px;border-radius:18px;border:1px solid #1f2a44}
+  .controls{display:flex;gap:12px;align-items:center;margin:0 0 12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+  .tile{background:var(--tile);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:12px 12px 10px;box-shadow:0 2px 8px rgba(0,0,0,.22);transition:transform .08s ease, box-shadow .08s ease, border-color .08s ease}
+  .tile:hover{border-color:var(--ring);box-shadow:0 0 0 3px var(--ring),0 6px 14px rgba(0,0,0,.35);transform:translateY(-2px)}
+  .desc{font-size:14px;font-weight:600;margin-bottom:6px}
+  .name{font-size:12px;color:#a3a3a3;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  label{font-size:12px;color:#cbd5e1}
+  select{background:#0b1222;color:#e5e7eb;border:1px solid #263247;border-radius:10px;padding:6px 10px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Linux Cursor Test Grid (SVG→PNG→GIF fallback)</h1>
+    <p class="note">
+      Follows the CodePen-style fallback: try <code>svg</code>, then <code>png</code>, then <code>gif</code>, finally <code>auto</code>. Safari accepts SVG cursors but ignores hotspot coordinates on SVG; add coords only to bitmap fallbacks. Keep images ≤64–128px. Hotspots use the two numbers after the URL.
+    </p>
+    <div class="controls">
+      <label>Hotspot X <input id="hotX" type="number" value="0" style="width:64px;background:#0b1222;color:#e5e7eb;border:1px solid #263247;border-radius:8px;padding:4px 6px"></label>
+      <label>Hotspot Y <input id="hotY" type="number" value="0" style="width:64px;background:#0b1222;color:#e5e7eb;border:1px solid #263247;border-radius:8px;padding:4px 6px"></label>
+      <label>Append <code>.svg/.png/.gif</code> next to this file with the same basenames.</label>
+    </div>
+    <div id="grid" class="grid"></div>
+  </div>
+
+<script>
+// Same list as before
+const cursors = [
+  {desc:"Default pointer", file:"left_ptr"},
+  {desc:"Alternative pointer", file:"arrow"},
+  {desc:"Link select", file:"pointer"},
+  {desc:"Grab", file:"grab"},
+  {desc:"Grabbing", file:"grabbing"},
+  {desc:"Close/Delete (red X)", file:"dnd-no-drop"},
+  {desc:"Close/Delete (orange X)", file:"dnd-no-drop-alt"},
+  {desc:"Close/Delete (grey X)", file:"not-allowed"},
+  {desc:"Move", file:"fleur"},
+  {desc:"Busy", file:"watch"},
+  {desc:"Help", file:"help"},
+  {desc:"Text select", file:"text"},
+  {desc:"Add / Copy", file:"copy"},
+  {desc:"Move to new / Link", file:"alias"},
+  {desc:"Remove", file:"dnd-none"},
+  {desc:"Prohibited", file:"no-drop"},
+  {desc:"Zoom in", file:"zoom-in"},
+  {desc:"Zoom out", file:"zoom-out"},
+  {desc:"Vertical bar select", file:"vertical-text"},
+  {desc:"Horizontal bar select", file:"horizontal-text"},
+  {desc:"Rotate left", file:"rotate-left"},
+  {desc:"Rotate right", file:"rotate-right"},
+  {desc:"Vertical resize", file:"ns-resize"},
+  {desc:"Horizontal resize", file:"ew-resize"},
+  {desc:"Diagonal resize ↖↘", file:"nwse-resize"},
+  {desc:"Diagonal resize ↗↙", file:"nesw-resize"},
+  {desc:"Up", file:"n-resize"},
+  {desc:"Down", file:"s-resize"},
+  {desc:"Left", file:"w-resize"},
+  {desc:"Right", file:"e-resize"},
+  {desc:"Top-left corner resize", file:"nw-resize"},
+  {desc:"Top-right corner resize", file:"ne-resize"},
+  {desc:"Bottom-left corner resize", file:"sw-resize"},
+  {desc:"Bottom-right corner resize", file:"se-resize"},
+  {desc:"Up resize from bar", file:"n-resize-bar"},
+  {desc:"Down resize from bar", file:"s-resize-bar"},
+  {desc:"Left resize from bar", file:"w-resize-bar"},
+  {desc:"Right resize from bar", file:"e-resize-bar"},
+  {desc:"Crosshair", file:"crosshair"},
+  {desc:"Precision select", file:"tcross"},
+  {desc:"Move ↖", file:"move-nw"},
+  {desc:"Move ↗", file:"move-ne"},
+  {desc:"Move ↙", file:"move-sw"},
+  {desc:"Move ↘", file:"move-se"},
+  {desc:"All-direction scroll", file:"all-scroll"},
+  {desc:"Two-axis resize", file:"resize-all"},
+  {desc:"Fullscreen / fit", file:"zoom-to-fit"},
+  {desc:"Pen", file:"pencil"},
+  {desc:"Eraser", file:"eraser"},
+  {desc:"Color picker", file:"color-picker"}
+];
+
+const grid = document.getElementById('grid');
+const hotX = document.getElementById('hotX');
+const hotY = document.getElementById('hotY');
+
+function build(){
+  grid.innerHTML = '';
+  for (const c of cursors){
+    const tile = document.createElement('div');
+    tile.className = 'tile';
+    const x = Number(hotX.value)||0; const y = Number(hotY.value)||0;
+    // CodePen-style multi-fallback chain (svg→png→gif→auto)
+    tile.style.cursor = `url('./${c.file}.svg'), url('./${c.file}.png') ${x} ${y}, url('./${c.file}.gif') ${x} ${y}, auto`;
+    tile.innerHTML = `<div class="desc">${c.desc}</div><div class="name">${c.file}.svg → .png → .gif</div>`;
+    grid.appendChild(tile);
+  }
+}
+
+hotX.addEventListener('input', build);
+hotY.addEventListener('input', build);
+
+build();
+</script>
+</body>
+</html>

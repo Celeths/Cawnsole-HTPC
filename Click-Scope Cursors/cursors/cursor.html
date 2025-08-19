@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cursor Test Playground</title>
+  <style>
+    :root { --gap: 14px; --bg: #0b0b10; --card: #151821; --ink: #d7d9e0; --muted: #8b90a1; --accent: #8a63d2; }
+    html, body { height: 100%; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.45 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; }
+    a { color: var(--accent); text-decoration: none; }
+
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    .head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 10px; }
+    .title { font-size: 20px; font-weight: 700; letter-spacing: .2px; }
+    .controls { display: flex; align-items: center; gap: 10px; color: var(--muted); }
+    .controls label { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; }
+
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap); }
+    @media (max-width: 1000px){ .grid { grid-template-columns: repeat(2, 1fr);} }
+    @media (max-width: 680px){ .grid { grid-template-columns: 1fr; } }
+
+    .card { background: var(--card); border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.03); padding: 14px; min-height: 140px; display: flex; flex-direction: column; }
+    .card h3 { margin: 0 0 10px; font-size: 14px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
+    .card .demo { flex: 1; border-radius: 10px; background: rgba(255,255,255,.03); display: grid; place-items: center; position: relative; overflow: hidden; }
+    .note { color: var(--muted); font-size: 12px; margin-top: 8px; }
+
+    /* --- Cursor utilities (system fallback first) --- */
+    .c-pointer      { cursor: pointer; }
+    .c-text         { cursor: text; }
+    .c-vtext        { cursor: vertical-text; }
+    .c-cross        { cursor: crosshair; }
+    .c-help         { cursor: help; }
+    .c-context      { cursor: context-menu; }
+    .c-move         { cursor: move; }
+    .c-allscroll    { cursor: all-scroll; }
+    .c-notallowed   { cursor: not-allowed; }
+    .c-copy         { cursor: copy; }
+    .c-zoom-in      { cursor: zoom-in; }
+    .c-zoom-out     { cursor: zoom-out; }
+    .c-ew-resize    { cursor: ew-resize; }
+    .c-ns-resize    { cursor: ns-resize; }
+    .c-nesw-resize  { cursor: nesw-resize; }
+    .c-nwse-resize  { cursor: nwse-resize; }
+
+    /* Custom cursor URLs are enabled by toggling .use-custom on <body> */
+    body.use-custom .c-pointer   { cursor: url("pointer.svg") 0 0, pointer; }
+    body.use-custom .c-text      { cursor: url("text.svg") 0 0, text; }
+    body.use-custom .c-vtext     { cursor: url("vertical-text.svg") 0 0, vertical-text; }
+    body.use-custom .c-cross     { cursor: url("crosshair.svg") 0 0, crosshair; }
+    body.use-custom .c-help      { cursor: url("help.svg") 0 0, help; }
+    body.use-custom .c-context   { cursor: url("context-menu.svg") 0 0, context-menu; }
+    body.use-custom .c-move      { cursor: url("fleur.svg") 0 0, move; }
+    body.use-custom .c-allscroll { cursor: url("all-scroll.svg") 0 0, all-scroll; }
+    body.use-custom .c-notallowed{ cursor: url("not-allowed.svg") 0 0, not-allowed; }
+    body.use-custom .c-copy      { cursor: url("copy.svg") 0 0, copy; }
+    body.use-custom .c-zoom-in   { cursor: url("zoom-in.svg") 0 0, zoom-in; }
+    body.use-custom .c-zoom-out  { cursor: url("zoom-out.svg") 0 0, zoom-out; }
+    body.use-custom .c-ew-resize { cursor: url("size_hor.svg") 8 8, ew-resize; }
+    body.use-custom .c-ns-resize { cursor: url("size_ver.svg") 8 8, ns-resize; }
+    body.use-custom .c-nesw-resize{cursor: url("size_bdiag.svg") 8 8, nesw-resize; }
+    body.use-custom .c-nwse-resize{cursor: url("size_fdiag.svg") 8 8, nwse-resize; }
+
+    /* Per-area extras */
+    .pad { padding: 10px 14px; }
+    .box { width: 100%; height: 100%; display: grid; place-items: center; }
+
+    /* Drag + Drop */
+    .drag-thing { user-select: none; padding: 10px 14px; border-radius: 12px; background: rgba(138,99,210,.15); outline: 1px dashed rgba(138,99,210,.6); }
+    .dropzone { border: 1.5px dashed rgba(255,255,255,.18); border-radius: 10px; width: 90%; height: 65%; display: grid; place-items: center; color: var(--muted); }
+
+    /* Scroll demo */
+    .scrollbox { height: 140px; width: 92%; overflow: auto; line-height: 1.5; padding: 12px; border-radius: 10px; background: rgba(255,255,255,.03); }
+
+    /* Resizers */
+    .split { display: grid; grid-template-columns: 1fr 8px 1fr; gap: 0; height: 140px; width: 100%; }
+    .gutter-x { background: rgba(255,255,255,.06); }
+    .pane { background: rgba(255,255,255,.03); border-radius: 10px; margin: 6px; }
+    .split-rows { display: grid; grid-template-rows: 1fr 8px 1fr; gap: 0; height: 140px; width: 100%; }
+    .gutter-y { background: rgba(255,255,255,.06); }
+
+    /* Pan (open hand -> grabbing) */
+    .pan-surface { width: 92%; height: 120px; border-radius: 10px; background: radial-gradient(80px 80px at var(--x,50%) var(--y,50%), rgba(138,99,210,.25), rgba(138,99,210,0) 60%), rgba(255,255,255,.03); }
+    .grabbing { cursor: grabbing; }
+    body.use-custom .grabbing { cursor: url("dnd-move.svg") 0 0, grabbing; }
+    .pan-surface.c-openhand { cursor: grab; }
+    body.use-custom .pan-surface.c-openhand { cursor: url("openhand.svg") 0 0, grab; }
+
+    /* Zoom image */
+    .zoom-img { max-width: 92%; border-radius: 10px; display: block; }
+
+    /* Vertical text demo */
+    .vertical { writing-mode: vertical-rl; }
+
+    /* Subtle badges */
+    .badge { position: absolute; top: 8px; right: 8px; background: rgba(255,255,255,.08); color: var(--muted); font-size: 11px; padding: 4px 8px; border-radius: 999px; }
+  </style>
+</head>
+<body class="use-custom">
+  <div class="wrap">
+    <div class="head">
+      <div class="title">Cursor Test Playground</div>
+      <div class="controls">
+        <label><input id="toggleCustom" type="checkbox" checked> Use custom SVG cursors</label>
+        <span class="note">Place this HTML next to your <code>.svg</code> files.</span>
+      </div>
+    </div>
+
+    <div class="grid">
+      <!-- Pointer / Link -->
+      <section class="card">
+        <h3>Pointer / Link</h3>
+        <div class="demo c-pointer pad">
+          <a href="#" onclick="event.preventDefault()">This is a link (hover)</a>
+        </div>
+        <div class="note">Uses <code>pointer.svg</code> on hover.</div>
+      </section>
+
+      <!-- Text selection -->
+      <section class="card">
+        <h3>Text Select</h3>
+        <div class="demo pad c-text">
+          <div contenteditable spellcheck="false">Select this text to test the I‑beam.</div>
+        </div>
+        <div class="note">Uses <code>text.svg</code>.</div>
+      </section>
+
+      <!-- Vertical text selection -->
+      <section class="card">
+        <h3>Vertical Text</h3>
+        <div class="demo pad c-vtext">
+          <div class="vertical">縦書きテキスト ABC 123</div>
+        </div>
+        <div class="note">Uses <code>vertical-text.svg</code>.</div>
+      </section>
+
+      <!-- Crosshair / precise -->
+      <section class="card">
+        <h3>Crosshair</h3>
+        <div class="demo c-cross">
+          <div class="badge">Click moves focal glow</div>
+          <div class="pan-surface" id="crossSurface"></div>
+        </div>
+        <div class="note">Uses <code>crosshair.svg</code>.</div>
+      </section>
+
+      <!-- Help / Context -->
+      <section class="card">
+        <h3>Help & Context</h3>
+        <div class="demo pad" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+          <button class="c-help">Hover: help</button>
+          <button class="c-context" oncontextmenu="event.preventDefault(); alert('Custom context menu…');">Right‑click: context</button>
+        </div>
+        <div class="note">Uses <code>help.svg</code>, <code>context-menu.svg</code>.</div>
+      </section>
+
+      <!-- Not-allowed / Forbidden -->
+      <section class="card">
+        <h3>Forbidden</h3>
+        <div class="demo pad">
+          <button class="c-notallowed" disabled>Disabled button</button>
+        </div>
+        <div class="note">Uses <code>not-allowed.svg</code>.</div>
+      </section>
+
+      <!-- Copy -->
+      <section class="card">
+        <h3>Copy</h3>
+        <div class="demo pad c-copy">Hover here to see copy cursor</div>
+        <div class="note">Uses <code>copy.svg</code>.</div>
+      </section>
+
+      <!-- Drag & Drop -->
+      <section class="card">
+        <h3>Drag & Drop</h3>
+        <div class="demo pad">
+          <div draggable="true" id="dragItem" class="drag-thing c-move">Drag me</div>
+          <div id="dropZone" class="dropzone c-notallowed" style="margin-top:12px;">Drop zone</div>
+        </div>
+        <div class="note">Drag shows <code>fleur.svg</code>. Drop zone is <code>not-allowed.svg</code> until valid.</div>
+      </section>
+
+      <!-- Scroll / All-Scroll -->
+      <section class="card">
+        <h3>Scroll / All‑Scroll</h3>
+        <div class="demo pad">
+          <div class="scrollbox c-allscroll" id="scrollbox">
+            <p>Scroll inside this box. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non neque a magna euismod faucibus. Vivamus iaculis, nisl at tincidunt efficitur, arcu arcu hendrerit turpis, a venenatis quam velit et dui.</p>
+            <p>Aliquam finibus tincidunt sapien, a laoreet elit gravida eget. Phasellus vehicula tincidunt diam, vitae ullamcorper augue. Curabitur dignissim, tortor non tincidunt eleifend, urna magna posuere nisl, nec lacinia nisl libero vel orci.</p>
+            <p>Donec mattis, arcu in egestas dictum, nibh odio blandit augue, at tristique turpis massa eget mauris. Nulla facilisi. Etiam vitae arcu ac nunc luctus dictum.</p>
+          </div>
+        </div>
+        <div class="note">Uses <code>all-scroll.svg</code>.</div>
+      </section>
+
+      <!-- Split (EW resize) -->
+      <section class="card">
+        <h3>Column Resize</h3>
+        <div class="demo">
+          <div class="split">
+            <div class="pane"></div>
+            <div class="gutter-x c-ew-resize" id="gutterX"></div>
+            <div class="pane"></div>
+          </div>
+        </div>
+        <div class="note">Uses <code>size_hor.svg</code> (EW).</div>
+      </section>
+
+      <!-- Split (NS resize) -->
+      <section class="card">
+        <h3>Row Resize</h3>
+        <div class="demo">
+          <div class="split-rows">
+            <div class="pane"></div>
+            <div class="gutter-y c-ns-resize" id="gutterY"></div>
+            <div class="pane"></div>
+          </div>
+        </div>
+        <div class="note">Uses <code>size_ver.svg</code> (NS).</div>
+      </section>
+
+      <!-- Corner resizes -->
+      <section class="card">
+        <h3>Diagonal Resize</h3>
+        <div class="demo" style="place-items:stretch;">
+          <div style="margin:auto; width:220px; height:120px; position:relative; background:rgba(255,255,255,.03); border-radius:12px;">
+            <div class="badge">Drag corners</div>
+            <div class="handle c-nesw-resize" data-corner="tl" style="position:absolute; left:-6px; top:-6px; width:12px; height:12px; background:rgba(255,255,255,.2); border-radius:4px;"></div>
+            <div class="handle c-nwse-resize" data-corner="tr" style="position:absolute; right:-6px; top:-6px; width:12px; height:12px; background:rgba(255,255,255,.2); border-radius:4px;"></div>
+            <div class="handle c-nwse-resize" data-corner="bl" style="position:absolute; left:-6px; bottom:-6px; width:12px; height:12px; background:rgba(255,255,255,.2); border-radius:4px;"></div>
+            <div class="handle c-nesw-resize" data-corner="br" style="position:absolute; right:-6px; bottom:-6px; width:12px; height:12px; background:rgba(255,255,255,.2); border-radius:4px;"></div>
+          </div>
+        </div>
+        <div class="note">Uses <code>size_bdiag.svg</code> / <code>size_fdiag.svg</code>.</div>
+      </section>
+
+      <!-- Pan (open hand / grabbing) -->
+      <section class="card">
+        <h3>Pan (Open/Grab)</h3>
+        <div class="demo" style="display:grid; place-items:center;">
+          <div class="pan-surface c-openhand" id="panSurface"></div>
+        </div>
+        <div class="note">Idle: <code>openhand.svg</code>. Dragging: <code>dnd-move.svg</code>.</div>
+      </section>
+
+      <!-- Zoom in/out -->
+      <section class="card">
+        <h3>Zoom In / Out</h3>
+        <div class="demo" style="display:grid; place-items:center;">
+          <img id="zoomImg" class="zoom-img c-zoom-in" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='480'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238a63d2'/%3E%3Cstop offset='1' stop-color='%2356d364'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='%23202639'/%3E%3Ccircle cx='400' cy='240' r='140' fill='url(%23g)'/%3E%3C/svg%3E" alt="" />
+        </div>
+        <div class="note">Click to toggle zoom and cursor (<code>zoom-in.svg</code>/<code>zoom-out.svg</code>).</div>
+      </section>
+
+      <!-- Wayland emblem just for fun -->
+      <section class="card">
+        <h3>Wayland Cursor</h3>
+        <div class="demo pad" style="text-align:center;">
+          <div class="c-pointer" style="display:inline-flex; align-items:center; gap:10px;">
+            <img src="wayland-cursor.svg" alt="wayland" style="height:28px; width:28px;" />
+            <span>Hover shows pointer using your theme</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <p class="note" style="margin-top:16px;">Tip: uncheck “Use custom SVG cursors” to compare vs. system cursors. If a custom cursor doesn’t show, your browser may not support SVG cursors—Firefox does; Chromium typically does not.</p>
+  </div>
+
+  <script>
+    // Toggle custom URLs vs system cursors
+    const toggle = document.getElementById('toggleCustom');
+    toggle.addEventListener('change', e => {
+      document.body.classList.toggle('use-custom', e.target.checked);
+    });
+
+    // Crosshair focal glow follows clicks
+    const cross = document.getElementById('crossSurface');
+    cross.addEventListener('pointerdown', e => {
+      const rect = cross.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      cross.style.setProperty('--x', x + '%');
+      cross.style.setProperty('--y', y + '%');
+    });
+
+    // Drag & drop semantics
+    const dragItem = document.getElementById('dragItem');
+    const dropZone = document.getElementById('dropZone');
+    dragItem.addEventListener('dragstart', e => { e.dataTransfer.setData('text/plain', 'okay'); });
+    dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.remove('c-notallowed'); dropZone.classList.add('c-copy'); e.dataTransfer.dropEffect = 'copy'; });
+    dropZone.addEventListener('dragleave', () => { dropZone.classList.add('c-notallowed'); dropZone.classList.remove('c-copy'); });
+    dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.textContent = 'Dropped!'; dropZone.classList.add('c-move'); dropZone.classList.remove('c-copy','c-notallowed'); });
+
+    // Split panes (EW)
+    (function(){
+      const gutter = document.getElementById('gutterX');
+      const split = gutter.parentElement; let down=false;
+      gutter.addEventListener('pointerdown', e => { down = true; gutter.setPointerCapture(e.pointerId); });
+      gutter.addEventListener('pointerup', () => down=false);
+      gutter.addEventListener('pointermove', e => {
+        if(!down) return;
+        const rect = split.getBoundingClientRect();
+        const x = Math.min(Math.max(e.clientX - rect.left, 60), rect.width-60);
+        const left = x - 4; // gutter half
+        split.style.gridTemplateColumns = `${left}px 8px 1fr`;
+      });
+    })();
+
+    // Split panes (NS)
+    (function(){
+      const gutter = document.getElementById('gutterY');
+      const split = gutter.parentElement; let down=false;
+      gutter.addEventListener('pointerdown', e => { down = true; gutter.setPointerCapture(e.pointerId); });
+      gutter.addEventListener('pointerup', () => down=false);
+      gutter.addEventListener('pointermove', e => {
+        if(!down) return;
+        const rect = split.getBoundingClientRect();
+        const y = Math.min(Math.max(e.clientY - rect.top, 40), rect.height-40);
+        const top = y - 4;
+        split.style.gridTemplateRows = `${top}px 8px 1fr`;
+      });
+    })();
+
+    // Diagonal handles – just change size as you drag
+    document.querySelectorAll('.handle').forEach(h => {
+      let down=false, host=h.parentElement, startX=0, startY=0, startW=host.offsetWidth, startH=host.offsetHeight;
+      h.addEventListener('pointerdown', e => { down=true; startX=e.clientX; startY=e.clientY; startW=host.offsetWidth; startH=host.offsetHeight; h.setPointerCapture(e.pointerId); });
+      h.addEventListener('pointerup', ()=> down=false);
+      h.addEventListener('pointermove', e => {
+        if(!down) return;
+        const dx=e.clientX-startX, dy=e.clientY-startY;
+        const pos=h.dataset.corner;
+        let w=startW, hgt=startH;
+        if(pos==='tr' || pos==='br') w = Math.max(120, startW + dx);
+        if(pos==='tl' || pos==='bl') w = Math.max(120, startW - dx);
+        if(pos==='bl' || pos==='br') hgt = Math.max(80, startH + dy);
+        if(pos==='tl' || pos==='tr') hgt = Math.max(80, startH - dy);
+        host.style.width = w+'px'; host.style.height = hgt+'px';
+      });
+    });
+
+    // Pan (open hand -> grabbing)
+    (function(){
+      const surface = document.getElementById('panSurface');
+      let down=false; let ox=0, oy=0; let bgx=50, bgy=50;
+      const setBg = ()=> { surface.style.setProperty('--x', bgx+'%'); surface.style.setProperty('--y', bgy+'%'); };
+      setBg();
+      surface.addEventListener('pointerdown', e => { down=true; surface.classList.add('grabbing'); ox=e.clientX; oy=e.clientY; surface.setPointerCapture(e.pointerId); });
+      surface.addEventListener('pointerup', ()=> { down=false; surface.classList.remove('grabbing'); });
+      surface.addEventListener('pointermove', e => {
+        if(!down) return;
+        const rect = surface.getBoundingClientRect();
+        bgx = Math.min(100, Math.max(0, bgx + (e.clientX-ox)/rect.width*100));
+        bgy = Math.min(100, Math.max(0, bgy + (e.clientY-oy)/rect.height*100));
+        ox=e.clientX; oy=e.clientY; setBg();
+      });
+    })();
+
+    // Zoom image toggles zoom-in/out cursor
+    (function(){
+      const img = document.getElementById('zoomImg');
+      let zoomed=false;
+      img.addEventListener('click', () => {
+        zoomed = !zoomed;
+        img.style.transform = zoomed ? 'scale(1.6)' : 'scale(1)';
+        img.style.transition = 'transform .15s ease-out';
+        img.classList.toggle('c-zoom-in', !zoomed);
+        img.classList.toggle('c-zoom-out', zoomed);
+      });
+    })();
+  </script>
+</body>
+</html>
